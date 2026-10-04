@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Cocoa';
+  src: url('./assets/fonts/Cocoa Delight Demo.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Super Cacao';
+  src: url('./assets/fonts/Super Cacao.ttf') format('truetype');
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Super Cacao', 'Cocoa', sans-serif;
+}
+
+:root {
+  font-family: 'Cocoa', 'Trebuchet MS', sans-serif;
+  color: #163848;
+  background: #FCB315;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --yellow: #FCB315;
+  --ink: #163848;
+  --teal: #79A9AB;
+  --red: #ED3126;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+a { color: inherit; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--ink); outline-offset: 7px; }
+::selection { color: var(--ink); background: var(--teal); }
